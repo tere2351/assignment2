@@ -1,0 +1,145 @@
+body{
+    margin:0;
+    background-color: whitesmoke;
+}
+
+.navbar{
+    text-align:right;
+    font-family:montserrat;
+    /* box-shadow: 5px 10px rgb(133, 132, 132); */
+    border-bottom:1px solid grey;
+    padding:20px;
+    background-color:white;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+a:hover{
+    color:#aaaaee;
+}
+
+.link{
+    margin-right:25px;
+}
+
+#box-profile{
+    border-radius:10px;
+    margin:0;
+    position: absolute;
+    top:15%;
+    left:3%;
+    width:90%;
+    float:left;
+    background-color:white;
+    border:1px dashed grey;
+}
+
+.foto{
+    border-radius:50%;
+    width:15%;
+    height:200px;
+    background-image: url(images/WhatsApp\ Image\ 2023-01-30\ at\ 21.20.25.jpeg);
+    background-position:center;
+    background-size:cover;
+    margin:15px;
+    float:left;
+}
+
+.myprofile{
+    width:30%;
+    float:left;
+    font-family:montserrat;
+    margin:15px;
+}
+
+.button-kontak{
+    background-color:#F0F8FF;
+    border-radius:8px;
+    border:1px solid grey;
+    margin:5px;
+    font-family: montserrat;
+    height:25px;
+}
+
+.button-kontak:hover{
+    background-color: #cce7ff;
+}
+
+.button-cv{
+    background-color: #e6e6fa;
+    border-radius:8px;
+    border:1px solid grey;
+    margin:5px;
+    font-family: montserrat;
+    height:25px;
+}
+
+.button-cv:hover{
+    background-color:  #aaaaee;
+}
+
+.side-info{
+    width:10%;
+    float:left;
+    margin:15px;
+    font-family:montserrat;
+}
+
+.side-info-isi{
+    width:10%;
+    float:left;
+    margin:15px;
+    font-family:montserrat;
+}
+
+#box-input{
+    border-radius:10px;
+    margin:0;
+    position: absolute;
+    top:53%;
+    left:3%;
+    width:90%;
+    float:left;
+    background-color:white;
+    padding-bottom:20px;
+    border:1px dashed grey;
+}
+
+.label-form{
+    width:100%
+}
+
+.input-title{
+    margin:15px;
+    font-family:montserrat;
+    padding-bottom:0px;
+}
+
+.input-field{
+    border:1px solid grey;
+    width:98%;
+    border-radius:4px;
+    padding:3px;
+    font-family:montserrat;
+}
+
+.submit{
+    margin-left:15px;
+    background-color:#F0F8FF;
+    width:98%;
+    height:auto;
+    padding:5px;
+    border-radius:8px;
+    border:1px solid gray;
+    font-family:montserrat;
+}
+
+.submit:hover{
+    background-color:#cce7ff;
+}
+
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+Challenge Sesi 1 Theresa
+    </title>
+    <link rel="stylesheet" href="challengestyle.css">
+    </head>
+    <body>
+        <!-- ini navbar -->
+        <div class="navbar">
+            <a class="link" href="/">HOME</a>
+            <a class="link" href="">PRODUCT</a>
+            <a class="link" href="">GALLERY</a>
+            <a class="link" href="">BLOG</a>
+            <a class="link" href="">INVENTORY</a>
+        </div>
+        <!-- ini kotak info -->
+
+<br><div id="box-profile">
+    <!-- ini profpic -->
+    <div class="foto"></div>
+    
+    <!-- ini profile saya -->
+    <div class="myprofile"><h2 id="namaProfile"><b>Theresa Christina</b></h2>
+<p id="roleSaya">Web Developer</p>
+<br><br>
+<button class="button-kontak">Contact Me</button>
+<button class="button-cv">Resume</button>
+</div>
+
+<div class="side-info">
+<p><b>Availability</b></p>
+<p><b>Usia</b></p>
+<p><b>Lokasi</b></p>
+<p><b>Pengalaman</b></p>
+<p><b>Email</b></p>
+</div>
+
+<div class="side-info-isi">
+<p id="schedule">Part-time</p>
+<p id="umur">28</p>
+<p id="lokasi">Jakarta</p>
+<p id="pengalaman">1</p>
+<p id="e-mail">theresachr25@gmail.com</p>
+</div>
+</div>
+
+<br>
+<div id="box-input">
+    <form>
+    <div class="input-title">
+        <b>Nama:</b>
+    <br><input type="text"id="nama"name="name"value=""placeholder=""class="input-field">
+    </div>
+    <div class="input-title">
+        <b>Role:</b>
+    <br><input type="text"id="posisi"name="role"value=""placeholder=""class="input-field">
+    </div>
+    <div class="input-title">
+        <b>Availability:</b>
+    <br><input type="text"id="availability"name="availability"value=""placeholder=""class="input-field">
+    </div>
+    <div class="input-title">
+        <b>Age:</b>
+    <br><input type="text"id="age"name="age"value=""placeholder=""class="input-field">
+    </div> 
+    <div class="input-title">
+        <b>Lokasi:</b>
+    <br><input type="text"id="tempat"name="lokasi"value=""placeholder=""class="input-field">
+    </div> 
+    <div class="input-title">
+        <b>Years Experience:</b>
+    <br><input type="text"id="experience"name="experience"value=""placeholder=""class="input-field">
+    </div> 
+    <div class="input-title">
+        <b>Email</b>
+    <br><input type="text"id="email"name="email"value=""placeholder=""class="input-field">
+    </div> 
+</form>
+<button style="height:30px" type="submit"class="submit" onclick="submitForm()">SUBMIT</button>
+</div>
+<script>
+    // // GET VALUE FROM H1
+    var nama = document.getElementById("namaProfile").innerText;
+    console.log(nama);
+    // // SET DEFAULT VALUE INPUT NAMA
+    document.getElementById("nama").value = nama;
+
+    // GET VALUE FROM P
+    var position = document.getElementById("roleSaya").innerText;
+    console.log(position);
+    // SET DEFAULT VALUE INPUT ROLE
+    document.getElementById("posisi").value = position;
+
+    // GET VALUE FOR AVAILABILITY
+    var availability = document.getElementById("schedule").innerText;
+    console.log(availability);
+    // SET DEFAULT VALUE AVAILABILITY
+    document.getElementById("availability").value = availability;
+
+    // GET VALUE FOR AGE
+    var umur = document.getElementById("umur").innerText;
+    console.log(umur);
+    // SET DEFAULT VALUE AGE
+    document.getElementById("age").value = umur;
+
+     // GET VALUE FOR LOCATION
+     var tempat = document.getElementById("lokasi").innerText;
+    console.log(tempat);
+    // SET DEFAULT VALUE LOCATION
+    document.getElementById("tempat").value = tempat;
+
+    // GET VALUE FOR EXPERIENCE
+    var experience = document.getElementById("pengalaman").innerText;
+    console.log(experience);
+    // SET DEFAULT VALUE EXPERIENCE
+    document.getElementById("experience").value = experience;
+
+    // GET VALUE FOR EMAIL
+    var email = document.getElementById("e-mail").innerText;
+    console.log(email);
+    // SET DEFAULT VALUE EMAIL
+    document.getElementById("email").value = email;
+
+
+    function submitForm(){
+        var inputNama = document.getElementById("nama").value;
+        document.getElementById("namaProfile").innerText= inputNama;
+
+        var inputRole = document.getElementById("posisi").value;
+        document.getElementById("roleSaya").innerText = inputRole;
+
+        var inputAvailability = document.getElementById("availability").value;
+        document.getElementById("schedule").innerText = inputAvailability;
+
+        var inputAge = document.getElementById("age").value;
+        document.getElementById("umur").innerText= inputAge;
+
+        var inputLocation = document.getElementById("tempat").value;
+        document.getElementById("lokasi").innerText= inputLocation;
+
+        var inputPengalaman = document.getElementById("experience").value;
+        document.getElementById("pengalaman").innerText= inputPengalaman;
+
+        var inputEmail = document.getElementById("email").value;
+        document.getElementById("e-mail").innerText= inputEmail;
+    }
+</script>
+    </body>
+</html>
